@@ -316,3 +316,10 @@ footer {
   .page-hero { padding: 22px; }
   .hero-home { min-height: auto; }
 }
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
