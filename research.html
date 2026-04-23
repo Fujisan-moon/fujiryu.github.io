@@ -3,79 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>研究のまとめ | Research</title>
-  <meta name="description" content="研究テーマと研究成果をまとめたページです。" />
+  <title>研究について | 研究者ホームページ</title>
+  <meta name="description" content="研究テーマ、問題関心、発表・報告についてまとめたページです。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <a class="brand" href="index.html">藤野竜多のホームページ</a>
-      <nav class="nav-links">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="index.html">
+        <span class="site-brand-main">研究者ホームページ</span>
+        <span class="site-brand-sub">Ethics / Kant / AI</span>
+      </a>
+
+      <nav class="site-nav">
         <a href="index.html">Home</a>
-        <a href="research.html">研究について</a>
+        <a href="research.html" class="active">研究について</a>
         <a href="guide.html">カント倫理学文献ガイド</a>
         <a href="it.html">IT・AIについて / GitHub</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="page-hero page-hero-main compact-hero">
-      <span class="eyebrow">Research</span>
-      <h1>研究のまとめ</h1>
+  <main class="page-shell page-narrow">
+    <section class="page-hero">
+      <p class="hero-kicker">Research</p>
+      <h1 class="page-title">研究について</h1>
+      <div class="crest-divider narrow">
+        <span></span>
+        <span class="crest-mark">✦</span>
+        <span></span>
+      </div>
+      <p class="page-intro">
+        倫理学、とりわけカント倫理学を中心に、責任・自由・判断・格率・良心の問題を研究しています。
+      </p>
     </section>
 
-    <section class="grid research-layout">
-      <article class="card full-width">
-        <h2 class="section-title">研究テーマ</h2>
-        <p>
-          私の研究は、カント倫理学における責任・自由・判断の関係を中心に展開しています。
-          とりわけ、有限な人間的主体がどのように道徳法則を具体的状況へ適用しうるのか、
-          またその際に格率・反省的判断力・良心がどのような役割を果たすのかを主題としています。
-        </p>
-        <p>
-          近年は、道徳的顕著性、ハビトゥス、社会的形成要因といった論点にも関心を広げつつ、
-          カント倫理学の枠内で責任帰属の限界をどのように再構成できるかを検討しています。
-          あわせて、AI倫理や現代的な規範理論との接続可能性にも関心を持っています。
-        </p>
-      </article>
+    <section class="content-card">
+      <h2 class="section-title">問題関心</h2>
+      <p>
+        私の主たる関心は、有限な人間に対して道徳的要請がどのように成立しうるのか、
+        またその成立がどのような限界をもつのか、という点にあります。
+      </p>
+      <p>
+        カント倫理学は強い普遍性を志向する一方で、実際の判断や責任帰属においては、
+        認識的・実践的制約を抱えた主体を扱わなければなりません。
+        そのため、道徳法則の形式性だけでなく、格率形成、状況把握、反省的判断、
+        良心、可能性条件といった媒介項が重要になると考えています。
+      </p>
+    </section>
 
-      <article class="card two-col">
-        <h2 class="section-title">研究成果</h2>
+    <section class="content-card">
+      <h2 class="section-title">主な論点</h2>
+      <ul class="plain-list">
+        <li>責任と自由の関係</li>
+        <li>OIC（ought implies can）の位置づけ</li>
+        <li>格率の多層性と採用の問題</li>
+        <li>反省的判断力と道徳的顕著性</li>
+        <li>良心と帰責の限界</li>
+      </ul>
+    </section>
 
-        <div class="project">
-          <strong>論文・発表・報告</strong>
-
-          <ul class="publication-list">
-            <li>
-              「カントの尊敬の感情の分析」<br />
-              上智大学文学部哲学科（2025年1月）
-            </li>
-            <li>
-              「カントの「尊敬の感情」の感情主義的解釈」<br />
-              哲学若手研究者フォーラム研究集会（2025年10月）
-            </li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="card two-col">
-        <h2 class="section-title">文献ガイド</h2>
-        <p>
-          研究上参照してきた文献や、テーマごとの入門・主要研究を整理したページです。
-          カント倫理学、責任論、徳倫理学、ハビトゥス論、AIと規範などを順次まとめていく予定です。
-        </p>
-
-        <div class="cta-row">
-          <a class="button secondary" href="guide.html">文献ガイドを見る</a>
-        </div>
-      </article>
+    <section class="content-card">
+      <h2 class="section-title">発表・報告</h2>
+      <ul class="publication-list">
+        <li>
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <strong>「カントの尊敬の感情の分析」</strong><br />
+            上智大学文学部哲学科、2025年1月
+          </div>
+        </li>
+        <li>
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <strong>「カントの『尊敬の感情』の感情主義的解釈」</strong><br />
+            哲学若手研究者フォーラム研究集会（国際オリンピック記念青少年総合センター）、2025年10月
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <footer>
-    © 2026 Ryuta Fujino. Research page.
+  <footer class="site-footer">
+    <div class="footer-crest">✧</div>
+    <p>© 2026 Research Homepage</p>
   </footer>
 </body>
 </html>
