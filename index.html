@@ -1,24 +1,126 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Akisora Namaki</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>研究者ポートフォリオ | Home</title>
+  <meta name="description" content="研究者としてのプロフィール、最近の活動、研究ページ、IT実績ページへの導線をまとめたトップページです。" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">Research Portfolio</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">研究</a>
+        <a href="it.html">IT / GitHub</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>Akisora Namaki</h1>
+  <main>
+    <section class="hero hero-home">
+      <div class="photo-card" aria-label="プロフィール画像のプレースホルダ">
+        <div class="photo-placeholder">
+          Profile Image<br />
+          ここに写真を配置
+        </div>
+      </div>
 
-<p>University of Tokyo, Graduate School</p>
+      <div>
+        <span class="eyebrow">Academic Portfolio</span>
+        <h1>名前 / Name</h1>
+        <p class="lead">
+          倫理学・哲学を中心とした研究活動と、IT・データ分析・実装経験を整理して紹介するための個人サイトです。
+          研究上の関心、最近の活動、技術的な取り組みを、それぞれ独立したページで見やすくまとめています。
+        </p>
 
-<h2>Research</h2>
-<p>Kantian ethics, practical reason, moral judgment</p>
+        <div class="meta">
+          <div class="meta-item"><strong>所属</strong><br />〇〇大学大学院・〇〇研究室</div>
+          <div class="meta-item"><strong>専門</strong><br />倫理学 / 哲学 / AIと社会</div>
+          <div class="meta-item"><strong>連絡先</strong><br />your-email@example.com</div>
+        </div>
 
-<h2>Contact</h2>
-<p>Email: yourmail@example.com</p>
+        <div class="cta-row">
+          <a class="button" href="research.html">研究ページへ</a>
+          <a class="button secondary" href="it.html">IT / GitHubページへ</a>
+        </div>
+      </div>
+    </section>
 
-<p><a href="research.html">→ Research page</a></p>
-<p><a href="it.html">→ IT page</a></p>
+    <section class="grid home-grid">
+      <article class="card two-col feature-card">
+        <span class="eyebrow">Research</span>
+        <h2 class="section-title">研究について</h2>
+        <p>
+          研究ページでは、現在取り組んでいるテーマ、関心領域、文献サーベイ、今後の課題などを整理しています。
+          個別の論文一覧だけでなく、「何を問題として考えているのか」が分かる構成を意識しています。
+        </p>
+        <a class="text-link" href="research.html">研究のまとめを見る →</a>
+      </article>
 
+      <article class="card two-col feature-card">
+        <span class="eyebrow">IT / GitHub</span>
+        <h2 class="section-title">技術的な経験</h2>
+        <p>
+          ITページでは、Python、データ分析、機械学習、環境構築、GitHub上の制作物などを掲載します。
+          研究活動を支える実装力や、技術分野への越境的な関心が分かる内容を置く想定です。
+        </p>
+        <a class="text-link" href="it.html">IT分野の経験を見る →</a>
+      </article>
+
+      <article class="card two-col">
+        <h2 class="section-title">自己紹介</h2>
+        <p>
+          ここには、研究者としての問題意識や関心を、短めの文章で記します。CVの情報を並べるより先に、
+          「どのような問いに取り組んでいるか」が伝わると、サイト全体の印象がかなり整います。
+        </p>
+        <p>
+          たとえば、専門分野の中で何に焦点を当てているか、近年どの分野へ関心を広げているか、どのような方法で研究しているかを書くとよいです。
+        </p>
+      </article>
+
+      <article class="card two-col">
+        <h2 class="section-title">最近の活動</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>2026.04</strong><br />
+            研究会・読書会・学会準備などの近況を記載。
+          </div>
+          <div class="timeline-item">
+            <strong>2026.03</strong><br />
+            文献サーベイ、報告資料の作成、申請書執筆などの進捗を記載。
+          </div>
+          <div class="timeline-item">
+            <strong>2026.02</strong><br />
+            IT学習、データ分析、コード実装、共同プロジェクト参加などを記載。
+          </div>
+        </div>
+      </article>
+
+      <article class="card three-col stat-card">
+        <h3>掲載予定</h3>
+        <p class="stat-number">3</p>
+        <p class="note">Home / 研究 / IT の三層構成で整理</p>
+      </article>
+
+      <article class="card three-col stat-card">
+        <h3>今後追加</h3>
+        <p class="stat-number">CV</p>
+        <p class="note">論文一覧・発表資料・外部プロフィールへの導線</p>
+      </article>
+
+      <article class="card three-col stat-card">
+        <h3>更新方針</h3>
+        <p class="stat-number">Monthly</p>
+        <p class="note">トップページは短く、更新感が伝わることを重視</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Name Here. Built as a simple three-page academic portfolio.
+  </footer>
 </body>
 </html>
